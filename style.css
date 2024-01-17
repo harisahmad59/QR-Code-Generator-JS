@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #7bd3ea;
+}
+
+.container {
+  width: 400px;
+  padding: 25px 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.container p {
+  font-size: 18px;
+  color: #200e3a;
+}
+
+.container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #5fe791;
+  outline: 0;
+  border-radius: 5px;
+  outline: 0;
+  background: #fff;
+  caret-color: #f4f27e;
+  color: #607274;
+}
+
+.container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #a1eebd;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: ease 0.2s;
+}
+
+.container button:hover {
+  background-color: #5fe791;
+}
+
+#img-container {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#img-container img {
+  width: 100%;
+  padding: 10px;
+}
+
+#img-container.show-img {
+  max-height: 300px;
+  margin: 10px auto;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
